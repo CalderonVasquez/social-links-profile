@@ -43,26 +43,78 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Inter";
   src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
 }
-
-
-
-
-
-
-
-
-
-
-
-/* .social-link {
-  display: inline-flex;
+main {
+  padding: 10.875rem 33rem 10.938rem 33rem;
+  background-color: var(--off-black);
+}
+.social-links-container {
+  display: grid;
+  place-items: center;
+  padding: 2.5rem;
+  /* max-width: 24rem; */
+  background-color: var(--dark-grey);
+}
+.social-links-header {
+  display: grid;
+  place-items: center;
+}
+.social-links-img {
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+}
+.social-links-title {
+  font-size: 1.50rem;
+  margin-bottom: 0.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+}
+.social-links-location {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+}
+.social-links-description {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+.social-link {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  text-align: left;
   text-decoration: none; 
-  color: inherit;  
-  font-size: 1.2rem;  
-  padding: 0.75rem 1rem;  
-  border: 1px solid #ddd; 
-  border-radius: 4px;  
-  background-color: #eee; 
-  width: 120px;  
-} */
+  font-weight: var(--font-weight-bold);
+  color: var(--white);  
+  font-size: 0.875rem; 
+  border: 1px solid var(--grey);
+  border-radius: .25rem;  
+  background-color: var(--grey); 
+  width: 19rem;  
+  transition: background-color 0.5s ease-in-out;
+}
+.social-link:hover {
+  background-color: var(--primary-color);
+  color: var(--grey);
+}
+.github {
+  padding: 0.75rem 7.969rem;  
+}
+.mentor {
+  padding: 0.75rem 5.706rem;
+}
+.linkedin {
+  padding: 0.75rem 7.656rem;  
+}
+.twitter {
+  padding: 0.75rem 7.938rem;  
+}
+.instagram {
+  padding: 0.75rem 7.313rem;
+}
+
