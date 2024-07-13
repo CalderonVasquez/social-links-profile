@@ -4,6 +4,7 @@
 }
 * {
   margin: 0;
+  padding: 0;
 }
 body {
   line-height: 1.5;
@@ -43,26 +44,36 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Inter";
   src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
 }
-main {
-  padding: 10.875rem 33rem 10.938rem 33rem;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  height: 100vh;
   background-color: var(--off-black);
-  border: 2px solid red;
-
 }
-.social-links-container {
-  display: grid;
-  place-items: center;
-  min-width: 327px;
-  padding: 2.5rem;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  max-width: 23.438rem;
+  width: 100%;
+  border-radius: 0.5rem;
   background-color: var(--dark-grey);
-  border: 2px solid red;
-
 }
 .social-links-header {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .social-links-img {
+  width: 5.5rem;
+  height:  5.5rem;
   margin-bottom: 1.5rem;
   border-radius: 50%;
 }
@@ -84,43 +95,42 @@ main {
   color: var(--white);
 }
 .social-links {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
-  padding: 0;
-  border: 2px solid red;
+  width: 100%;
 }
 .social-link {
-  display: block;
-  margin-bottom: 1rem;
-  text-align: left;
-  text-decoration: none; 
-  font-weight: var(--font-weight-bold);
-  color: var(--white);  
-  font-size: 0.875rem; 
-  border: 1px solid var(--grey);
-  border-radius: .25rem;  
+  list-style-type: none;
+  margin: 0.5rem 0;
+  padding: 0.938;
+  border: none;
+  border-radius: 0.5rem;  
   background-color: var(--grey); 
   width: 100%;  
   transition: background-color 0.5s ease-in-out;
+}
+.social-link a {
+  font-weight: var(--font-weight-bold);
+  text-decoration: none; 
+  font-size: 0.875rem; 
+  color: var(--white);  
 }
 .social-link:hover {
   background-color: var(--primary-color);
   color: var(--grey);
 }
-.github {
-  padding: 0.75rem 7.969rem;  
+footer {
+    position: fixed;
+    bottom: 0;
 }
-.mentor {
-  padding: 0.75rem 5.706rem;
+.attribution {
+    color: var(--white);
+    text-align: center;
+    font-size: 0.688rem;
 }
-.linkedin {
-  padding: 0.75rem 7.656rem;  
+
+.attribution a{
+    color: var(--primary-color);
 }
-.twitter {
-  padding: 0.75rem 7.938rem;  
-}
-.instagram {
-  padding: 0.75rem 7.313rem;
-}
+
 
