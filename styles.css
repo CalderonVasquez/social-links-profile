@@ -49,8 +49,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
+  margin: 10.875rem 0;
   height: 100vh;
+  padding-bottom: 0;
   background-color: var(--off-black);
 }
 main {
@@ -59,8 +60,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1.25rem;
-  max-width: 23.438rem;
+  padding: 2.5rem;
+  max-width: 24rem;
   width: 100%;
   border-radius: 0.5rem;
   background-color: var(--dark-grey);
@@ -70,6 +71,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 2.5rem;
 }
 .social-links-img {
   width: 5.5rem;
@@ -80,44 +82,49 @@ main {
 .social-links-title {
   font-size: 1.50rem;
   margin-bottom: 0.25rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heavy);
   color: var(--white);
 }
 .social-links-location {
-  font-size: 0.875rem;
+  font-size: .875rem;
   margin-bottom: 1.5rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heavy);
   color: var(--primary-color);
 }
 .social-links-description {
   font-size: 0.875rem;
   margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-regular);
+  white-space: nowrap;
   color: var(--white);
 }
 .social-links {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 1rem;
 }
 .social-link {
   list-style-type: none;
-  margin: 0.5rem 0;
-  padding: 0.938;
+  padding: 0.75rem;
+  font-weight: var(--font-weight-bold);
   border: none;
   border-radius: 0.5rem;  
-  background-color: var(--grey); 
   width: 100%;  
+  background-color: var(--grey); 
   transition: background-color 0.5s ease-in-out;
 }
 .social-link a {
-  font-weight: var(--font-weight-bold);
+  /* font-weight: var(--font-weight-bold); */
   text-decoration: none; 
-  font-size: 0.875rem; 
   color: var(--white);  
 }
 .social-link:hover {
   background-color: var(--primary-color);
+}
+.social-link:hover a {
   color: var(--grey);
+  font-weight: var(--font-weight-heavy);
 }
 footer {
     position: fixed;
@@ -132,5 +139,10 @@ footer {
 .attribution a{
     color: var(--primary-color);
 }
-
-
+@media (max-width: 400px) {
+  body{
+    max-width: 100%;
+    width: auto;
+    padding: 7.25rem 1.5rem;
+  }
+}
