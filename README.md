@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](assets/images/updated-SS.png)
+![Desktop](assets/images/social-links.png)
 
 ### Links
 
